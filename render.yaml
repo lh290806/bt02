@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: bt02-survey
+    runtime: docker
+    plan: free
+    region: singapore
+    envVars:
+      - key: PORT
+        value: 8080
