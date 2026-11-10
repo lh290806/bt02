@@ -1,0 +1,113 @@
+/* =========================================
+   CÀI ĐẶT CHUNG CHO TOÀN BỘ TRANG
+   ========================================= */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+h1 {
+    color: teal;
+}
+
+br {
+    clear: both;
+}
+
+/* =========================================
+   CSS DÀNH CHO TRANG KHẢO SÁT (INDEX.HTML)
+   ========================================= */
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+/* Định dạng Label (Nhãn) của các ô nhập liệu */
+.input-group label {
+    display: inline-block;
+    width: 6em;
+    margin-bottom: 0.5em;
+}
+
+/* Ép phẳng và đồng bộ kích thước các ô input để không bị lệch pixel */
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 15em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    box-sizing: border-box;
+    height: 24px;
+    padding: 2px 4px;
+    border: 1px solid #767676;
+}
+
+/* Sắp xếp nút Radio nằm ngang */
+.radio-group label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+    width: auto; /* Bỏ giới hạn width để chữ không rớt dòng */
+}
+
+/* Sắp xếp Checkbox */
+.checkbox-group label {
+    width: auto;
+}
+
+/* Nút Submit của trang form */
+.submit-btn {
+    margin-left: 0.5em;
+    padding: 4px 15px;
+}
+
+
+/* =========================================
+   CSS DÀNH CHO TRANG KẾT QUẢ (THANKS.JSP)
+   ========================================= */
+
+/* Đổi màu tiêu đề trang Thanks thành màu đen xám */
+.thanks-header {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Lưới hiển thị kết quả (2 cột) */
+.result-grid {
+    display: grid;
+    grid-template-columns: 180px 1fr; /* Cột bên trái rộng 180px, cột phải chiếm phần còn lại */
+    gap: 15px 10px; /* Khoảng cách dọc 15px, ngang 10px */
+    margin-top: 25px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+/* Định dạng chữ cho cột Nhãn (Trái) */
+.result-grid label {
+    color: teal;
+    font-weight: bold;
+    margin: 0;
+    width: auto; /* Xóa bỏ width: 6em của form cũ */
+}
+
+/* Định dạng chữ cho cột Dữ liệu (Phải) */
+.result-grid span {
+    color: #333;
+}
+
+/* Nút quay lại */
+.return-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 4px 12px;
+    background-color: #efefef;
+    border: 1px solid #767676;
+    cursor: pointer;
+}
+
+.return-btn:hover {
+    background-color: #e5e5e5;
+}
